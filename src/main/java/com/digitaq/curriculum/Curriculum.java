@@ -29,9 +29,6 @@ public class Curriculum implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Specialite de la formation")
 	private java.lang.String speciality;
 
-	@org.kie.api.definition.type.Label("Date")
-	private LocalDate date;
-
 	public Curriculum() {
 	}
 
@@ -83,25 +80,16 @@ public class Curriculum implements java.io.Serializable {
 		this.speciality = speciality;
 	}
 
-	public java.time.LocalDate getDate() {
-		return this.date;
-	}
-
-	public void setDate(java.time.LocalDate date) {
-		this.date = date;
-	}
-
 	public Curriculum(java.lang.String curriculum_name,
 			java.lang.String curriculum_type, java.lang.String parcours,
 			java.lang.String domain, java.lang.String field,
-			java.lang.String speciality, java.time.LocalDate date) {
+			java.lang.String speciality) {
 		this.curriculum_name = curriculum_name;
 		this.curriculum_type = curriculum_type;
 		this.parcours = parcours;
 		this.domain = domain;
 		this.field = field;
 		this.speciality = speciality;
-		this.date = date;
 	}
 
 }
