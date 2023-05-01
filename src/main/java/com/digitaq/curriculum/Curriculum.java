@@ -7,29 +7,99 @@ package com.digitaq.curriculum;
 @javax.persistence.Entity
 public class Curriculum implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "CURRICULUM_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "CURRICULUM_ID_GENERATOR", sequenceName = "CURRICULUM_ID_SEQ")
-    private java.lang.Long id;
+	@org.kie.api.definition.type.Label(value = "Nom de la formation")
+	private java.lang.String curriculum_name;
 
-    public Curriculum() {
-    }
-    
-    public Curriculum(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Type de la formation")
+	private java.lang.String curriculum_type;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Parcours de la formation")
+	private java.lang.String parcours;
 
+	@org.kie.api.definition.type.Label(value = "Domaine de la formation")
+	private java.lang.String domain;
 
+	@org.kie.api.definition.type.Label(value = "Filiere de la formation")
+	private java.lang.String field;
 
+	@org.kie.api.definition.type.Label(value = "Specialite de la formation")
+	private java.lang.String speciality;
+
+	@org.kie.api.definition.type.Label(value = "Date de la demande")
+	private java.lang.String date;
+
+	public Curriculum() {
+	}
+
+	public java.lang.String getCurriculum_name() {
+		return this.curriculum_name;
+	}
+
+	public void setCurriculum_name(java.lang.String curriculum_name) {
+		this.curriculum_name = curriculum_name;
+	}
+
+	public java.lang.String getCurriculum_type() {
+		return this.curriculum_type;
+	}
+
+	public void setCurriculum_type(java.lang.String curriculum_type) {
+		this.curriculum_type = curriculum_type;
+	}
+
+	public java.lang.String getParcours() {
+		return this.parcours;
+	}
+
+	public void setParcours(java.lang.String parcours) {
+		this.parcours = parcours;
+	}
+
+	public java.lang.String getDomain() {
+		return this.domain;
+	}
+
+	public void setDomain(java.lang.String domain) {
+		this.domain = domain;
+	}
+
+	public java.lang.String getField() {
+		return this.field;
+	}
+
+	public void setField(java.lang.String field) {
+		this.field = field;
+	}
+
+	public java.lang.String getSpeciality() {
+		return this.speciality;
+	}
+
+	public void setSpeciality(java.lang.String speciality) {
+		this.speciality = speciality;
+	}
+
+	public java.lang.String getDate() {
+		return this.date;
+	}
+
+	public void setDate(java.lang.String date) {
+		this.date = date;
+	}
+
+	public Curriculum(java.lang.String curriculum_name,
+			java.lang.String curriculum_type, java.lang.String parcours,
+			java.lang.String domain, java.lang.String field,
+			java.lang.String speciality, java.lang.String date) {
+		this.curriculum_name = curriculum_name;
+		this.curriculum_type = curriculum_type;
+		this.parcours = parcours;
+		this.domain = domain;
+		this.field = field;
+		this.speciality = speciality;
+		this.date = date;
+	}
 
 }
