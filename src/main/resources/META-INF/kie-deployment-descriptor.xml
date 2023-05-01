@@ -8,12 +8,12 @@
     <marshalling-strategies>
         <marshalling-strategy>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.document.marshalling.DocumentCollectionImplMarshallingStrategy(new org.jbpm.document.marshalling.DocumentMarshallingStrategy())</identifier>
+            <identifier>new org.jbpm.document.marshalling.DocumentCollectionImplMarshallingStrategy(new org.jbpm.document.marshalling.DocumentMarshallingStrategy());</identifier>
             <parameters/>
         </marshalling-strategy>
         <marshalling-strategy>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.document.marshalling.DocumentMarshallingStrategy()</identifier>
+            <identifier>new org.jbpm.document.marshalling.DocumentMarshallingStrategy();</identifier>
             <parameters/>
         </marshalling-strategy>
     </marshalling-strategies>
